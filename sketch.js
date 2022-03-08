@@ -1,8 +1,8 @@
 let currentPic;
 let picArr = [];
-let side;
 let grid = [];
 let tRand;
+let side;
 
 function preloadImgs() {
   for (let i = 0; i < 55; i++) {
@@ -80,11 +80,15 @@ function preloadGrid() {
 
 function setup() {
   //canvas/drawing set up
-  createCanvas(windowHeight, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(0, 0, 0);
   imageMode(CORNER);
-  side = width * 0.25;
   tRand = randomTime();
+  if (width > height) {
+    side = height * 0.25;
+  } else {
+    side = width * 0.25;
+  }
 
   //preloads all images into picArr[]
   preloadImgs();
