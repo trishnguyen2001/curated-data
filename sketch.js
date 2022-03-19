@@ -66,7 +66,7 @@ const sketchCenter = function (p) {
       hateArr[i] = p.loadImage(filename);
     }
 
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 7; i++) {
       let filename = "dataset2/love (" + i + ").jpg";
       loveArr[i] = p.loadImage(filename);
     }
