@@ -66,7 +66,7 @@ const sketchCenter = function (p) {
       hateArr[i] = p.loadImage(filename);
     }
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 24; i++) {
       let filename = "dataset2/love (" + i + ").jpg";
       loveArr[i] = p.loadImage(filename);
     }
@@ -147,7 +147,7 @@ const sketchCenter = function (p) {
   p.perceive = function () {
     clicked = true;
     currentPic = loveArr[p.int(p.random(loveArr.length))];
-    currentPic.resize(p.width * 0.85, 0);
+    currentPic.resize(p.width * 0.9, 0);
     p.imageMode(p.CENTER);
     p.image(currentPic, p.width * 0.5, p.height * 0.5);
     startbtn.remove();

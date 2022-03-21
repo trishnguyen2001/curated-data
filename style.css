@@ -27,6 +27,7 @@ h3 {
   font-family: specialElite;
   font-size: 16px;
   color: #ffffff;
+  line-height: 2;
 }
 .highlight {
   color: #a32828;
@@ -68,7 +69,7 @@ p {
   margin: 10px;
   text-align: center;
   font-family: specialElite;
-  font-size: 12px;
+  font-size: 16px;
   color: #c5c5c5;
 }
 
